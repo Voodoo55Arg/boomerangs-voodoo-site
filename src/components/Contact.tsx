@@ -32,7 +32,28 @@ export default function Contact() {
     return Object.keys(e).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  if (!validate()) return;
+
+  try {
+    const res = await fetch('/.netlify/functions/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(form),
+    });
+
+    if (!res.ok) throw new Error('Error');
+
+    setSent(true);
+  } catch (err) {
+    console.log(err);
+    alert('Error al enviar el mensaje');
+  }
+};
     e.preventDefault();
     if (!validate()) return;
     setSent(true);
