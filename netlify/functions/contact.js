@@ -1,6 +1,6 @@
-const { Resend } = require("resend");
+import { Resend } from "resend";
 
-exports.handler = async (event) => {
+export async function handler(event) {
   if (event.httpMethod !== "POST") {
     return {
       statusCode: 405,
@@ -9,9 +9,7 @@ exports.handler = async (event) => {
   }
 
   try {
-    const data = JSON.parse(event.body);
-
-    const { name, email, message } = data;
+    const { name, email, message } = JSON.parse(event.body);
 
     const resend = new Resend(process.env.RESEND_SECRET);
 
@@ -43,5 +41,7 @@ ${message}
         error: error.message,
       }),
     };
+  }
+}
   }
 };
