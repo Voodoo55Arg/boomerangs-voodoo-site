@@ -33,7 +33,7 @@ export default function Frisbees() {
               </h2>
               <div className="w-28 h-28 lg:w-32 lg:h-32 flex-shrink-0">
                 <img
-                  src="/Skull_flux_voodoo.png"
+                  src="/NUEVO_LOGO_FRISBEE.png"
                   alt="Voodoo Skull"
                   className="w-full h-full object-contain"
                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
