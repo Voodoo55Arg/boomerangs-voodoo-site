@@ -67,7 +67,7 @@ const righthanded: Product[] = [
     level: 'Inicial/Intermedio',
     age: '+10 años',
     distance: '20–30 mts',
-    images: ['/MINI_V.jpg'],
+    images: ['/MINI_V.png'],
     contain: true,
     pdfUrl: '/MINI_V.pdf',
   },
