@@ -96,7 +96,7 @@ const ambidextrous: Product[] = [
     level: 'Inicial/Intermedio',
     age: '+8 años',
     distance: '20–25 mts',
-    images: ['/WINDMASTER.jpg'],
+    images: ['/WINDMASTER.png'],
     contain: true,
     pdfUrl: '/WINDMASTER.pdf',
   },
