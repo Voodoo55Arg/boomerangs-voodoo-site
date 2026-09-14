@@ -122,7 +122,7 @@ const ambidextrous: Product[] = [
     level: 'Inicial/Intermedio',
     age: '+5 años',
     distance: '4–8 mts',
-    images: ['/STAR INDOOR.png'],
+    images: ['/STAR_INDOOR.png'],
     contain: true,
     pdfUrl: '/STAR_INDOOR.pdf',
   },
