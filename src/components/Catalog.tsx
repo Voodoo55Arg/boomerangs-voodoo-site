@@ -109,7 +109,7 @@ const ambidextrous: Product[] = [
     level: 'Inicial/Intermedio',
     age: '+10 años',
     distance: '20–25 mts',
-    images: ['/VECTOR.jpg'],
+    images: ['/VECTOR.png'],
     contain: true,
     pdfUrl: '/VECTOR.pdf',
   },
