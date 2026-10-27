@@ -31,7 +31,7 @@ export async function handler(event) {
     const { error } = await resend.emails.send({
       from: "onboarding@resend.dev",
       to: "boomerangsvoodoo@gmail.com",
-      subject: `Contacto web Voodoo: ${subject}`,
+     subject: "Contacto web Voodoo: " + subject,
       text: `Nombre: ${name}
 Email: ${email}
 Teléfono: ${phone}
